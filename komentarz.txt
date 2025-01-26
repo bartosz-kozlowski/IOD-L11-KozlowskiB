@@ -1,0 +1,21 @@
+Zadanie 1.
+dla kodu bazowego:
+średnie czasy odpowiedzi: 2260
+przepustowość: 1.3/sec
+
+W klasie CustomerCardsController funkcja averageSpendings() była wywoływana dwukrotnie w każdej iteracji pętli for. Aby zoptymalizować kod, obliczyłem wartość średnich wydatków tylko raz przed rozpoczęciem pętli i zapisałem ją do zmiennej. Dzięki temu wyeliminowano nadmiarowe wywołania funkcji w każdej iteracji, co znacząco poprawiło wydajność i skróciło czas odpowiedzi systemu.
+
+dla kodu po modyfikacji:
+średnie czasy odpowiedzi: 29
+przepustowość: 1.9/sec
+
+Zadanie 2.
+10 drukarek: średnia przepustowość 2.0/sec
+20 drukarek: średnia przepustowość 4.0/sec
+28 drukarek: średnia przepustowość 5.4/sec
+29 drukarek: średnia przepustowość 5.6/sec
+
+Zatem rekomendowana liczba to 29 drukarek, ponieważ średnia przepustowość wynosi 5.6 na sekundę. Jest ona marginalnie wyższa niż zakładane 5,5 kart na sekundę (różnica 0,1).
+
+
+
